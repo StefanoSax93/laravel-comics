@@ -33,6 +33,7 @@ footer .bg-logo {
   position: absolute;
   right: 130px;
   top: -95px;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -84,5 +85,32 @@ body {
 .myButton:hover {
   background-color: white;
   color: #0282F9;
+}
+
+.bg-banner-blue {
+  background-color: #0282F9;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-banner-blue .col-6 {
+  font-size: 13px;
+}
+
+.bg-banner-blue .col-6:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-banner-blue img {
+  max-height: 50px;
+}
+
+.bg-banner-blue svg {
+  max-height: 35px;
+  stroke: white;
+  fill: none;
+  stroke-width: 1.7732;
+  stroke-miterlimit: 10;
 }
 

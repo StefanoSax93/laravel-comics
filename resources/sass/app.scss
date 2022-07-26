@@ -29,3 +29,28 @@ body {
     }
 }
 
+.bg-banner-blue {
+    background-color: $first;
+    position: relative;
+    z-index: 1;
+.col-6 {
+    font-size: 13px;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: transform .3s ease-in-out;
+    }
+}
+    img {
+        max-height: 50px;            
+    }
+
+    svg {
+        max-height: 35px;
+        stroke: white;
+        fill:none;
+        stroke-width:1.7732;
+        stroke-miterlimit:10;
+    }
+}
+

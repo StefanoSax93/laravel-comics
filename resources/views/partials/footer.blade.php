@@ -5,7 +5,7 @@
                 <div class="col">
                     <div class="d-flex flex-column">
                         <div>
-                            <h5 class="text-uppercase">Dc comics</h5>
+                            <h5 class="text-uppercase fw-bold">Dc comics</h5>
                             <ul class="list-unstyled">
                                 @foreach ($footerLinks['DcComicsLinks'] as $link)
                                     <li>
@@ -15,7 +15,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h5 class="text-uppercase">shop</h5>
+                            <h5 class="text-uppercase fw-bold">shop</h5>
                             <ul class="list-unstyled">
                                 @foreach ($footerLinks['shopLinks'] as $link)
                                     <li>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h5 class="text-uppercase">Dc</h5>
+                    <h5 class="text-uppercase fw-bold">Dc</h5>
                         <ul class="list-unstyled">
                             @foreach ($footerLinks['DcLinks'] as $link)
                                 <li>
@@ -37,7 +37,7 @@
                         </ul> 
                 </div>
                 <div class="col">
-                    <h5 class="text-uppercase">sites</h5>
+                    <h5 class="text-uppercase fw-bold">sites</h5>
                         <ul class="list-unstyled">
                             @foreach ($footerLinks['sitesLinks'] as $link)
                                 <li>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="col">
-            <img src="{{asset('images/dc-logo-bg.png')}}" alt="" class="bg-logo">
+            <img src="{{asset('images/dc-logo-bg.png')}}" alt="" class="bg-logo overflow-hidden">
         </div>
     </div>
 </div>
