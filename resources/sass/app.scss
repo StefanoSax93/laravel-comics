@@ -1,2 +1,31 @@
 //
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "variables";
+@import "partials/header";
+@import "partials/footer";
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: Asap Condensed, sans-serif;
+    width: 100%;
+}
+
+.bg_primary {
+    background-color: $first;
+}
+
+.myButton {
+    padding: 10px;
+    border: 2px solid $first;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: white;
+        color: $first;
+    }
+}
+

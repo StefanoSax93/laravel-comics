@@ -1,0 +1,38 @@
+footer {
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+
+    .bg-logo {
+        position: absolute;
+        right: 130px;
+        top: -95px;
+        z-index: -1;
+    }
+
+    a {
+        font-size: 14px;
+        color: grey;
+
+        &:hover {
+            color: $first;
+        }
+    }
+
+    .bg-banner {
+        background-color: $third;
+        position: relative;
+        z-index: 0;
+    
+        .fs-5 {
+            color: $first;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    
+        a:hover {
+            transform: scale(1.2);
+            transition: transform .3s ease-in-out;
+        }
+    }
+}
