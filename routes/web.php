@@ -22,8 +22,11 @@ Route::get('/', function () {
 });
 
 Route::get('/characters', function () {
+    
+    $footerLinks = config("footerlinks");
+    $comics = config("comics");
 
-    return view('characters');
+    return view('characters', compact('footerLinks') , compact('comics'));
 
 })->name('characters');
 
