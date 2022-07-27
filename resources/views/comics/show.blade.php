@@ -11,6 +11,8 @@
     <div class="container comic">
         <div class="comic-thumb">
             <img src="{{$comic['thumb']}}" alt="">
+            <h5 class="position-absolute text-white bg_primary text-uppercase p-1" style="top: 0">comic book</h5>
+            <h6 class="position-absolute text-center text-white bg_primary text-uppercase w-100 py-1" style="bottom: -8px">view gallery</h6>
         </div>
         
         <div class="py-5 ">
