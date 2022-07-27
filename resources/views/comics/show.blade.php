@@ -64,7 +64,7 @@ $on_sale_date = new Carbon($comic['sale_date']);
         </div>
     </div>
 
-    <div class="pt-4 border-top border-2 infos">
+    <div class="pt-4 border-top border-2 infos" style="padding-bottom: 150px">
         <div class="container comic">
             <div class="row gap-3">
                 <div class="col">

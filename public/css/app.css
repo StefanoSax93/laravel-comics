@@ -101,7 +101,7 @@ body {
 }
 
 .bg-banner-blue .col-6:hover {
-  transform: scale(1.2);
+  opacity: 0.6;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -206,6 +206,5 @@ body {
 
 .infos {
   background-color: #F6F6F6;
-  padding-bottom: 150px;
 }
 

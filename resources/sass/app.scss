@@ -43,7 +43,7 @@ body {
     z-index: 1;
 
     .col-6:hover {
-        transform: scale(1.2);
+        opacity: 0.6;
         transition: transform .3s ease-in-out;
     }
 
@@ -144,6 +144,5 @@ body {
 
 .infos {
     background-color: #F6F6F6;
-    padding-bottom: 150px;
 }
 
