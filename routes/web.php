@@ -21,6 +21,30 @@ Route::get('/', function () {
     return view('home', compact('footerLinks') , compact('comics'));
 });
 
+Route::get('/{id}', function ($id) {
+    $comics = config("comics");
+    $footerLinks = config("footerlinks");
+
+    $foundComic = null;
+
+    foreach ($comics as $i => $comic) {
+        if ($comic["id"] === intval($id)) {
+            $foundComic = $comic;
+            break;
+        }
+    }
+
+    if (is_null($foundComic)) {
+        abort('404');
+    }
+
+    return view("comics.show",compact('footerLinks') ,
+        [
+            "comic" => $foundComic
+        ]
+    );
+})->name("comics.show");
+
 Route::get('/characters', function () {
     
     $footerLinks = config("footerlinks");
