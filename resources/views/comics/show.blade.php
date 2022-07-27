@@ -1,3 +1,9 @@
+@php
+use Carbon\Carbon;
+$on_sale_date = new Carbon($comic['sale_date']);
+
+@endphp
+
 @extends('layouts.main_layout')
 
 @section('page_title', $comic['title'])
@@ -112,11 +118,11 @@
                         </div>
                     </div>
 
-                    <div class="py-3 border-top">
+                    <div class="py-3 border-top border-bottom">
                         <div class="row">
                             <div class="col-3 fw-bold">On Sale Date:</div>
                             <div class="col">
-                                <span>{{$comic['sale_date']}}</span>
+                                <span>{{$on_sale_date->toFormattedDateString()}}</span>
                             </div>
                         </div>
                     </div>

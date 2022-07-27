@@ -128,8 +128,12 @@ body {
 
     .comic-thumb {
         position: absolute;
-        top: -310px;
+        top: -300px;
         border: 2px solid white;
+
+        img {
+            max-width: 180px;
+        }
     }
 
     .bg-green {
