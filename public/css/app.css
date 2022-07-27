@@ -22,6 +22,7 @@
 }
 
 footer {
+  background-image: url("/images/footer-bg.jpg");
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -93,10 +94,6 @@ body {
   background-color: #0282F9;
   position: relative;
   z-index: 1;
-}
-
-.bg-banner-blue .col-6 {
-  font-size: 13px;
 }
 
 .bg-banner-blue .col-6:hover {

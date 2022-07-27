@@ -22,7 +22,7 @@
         @yield('page_content')
     </main>
 
-    <footer style="background-image: url({{asset('images/footer-bg.jpg')}}">
+    <footer>
         @include('partials.footer')
     </footer>
 

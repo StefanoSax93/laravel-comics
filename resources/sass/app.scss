@@ -37,14 +37,12 @@ body {
     background-color: $first;
     position: relative;
     z-index: 1;
-.col-6 {
-    font-size: 13px;
 
-    &:hover {
+    .col-6:hover {
         transform: scale(1.2);
         transition: transform .3s ease-in-out;
     }
-}
+
     img {
         max-height: 50px;            
     }
