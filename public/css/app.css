@@ -179,3 +179,20 @@ body {
   opacity: 1;
 }
 
+.container.comic {
+  position: relative;
+  max-width: 960px;
+  padding: 0 30px;
+}
+
+.container.comic .comic-thumb {
+  position: absolute;
+  top: -310px;
+  border: 2px solid white;
+}
+
+.container.comic .bg-green {
+  background-color: #55BA59;
+  border-bottom: 2px solid grey;
+}
+
