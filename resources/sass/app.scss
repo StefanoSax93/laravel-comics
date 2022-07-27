@@ -14,6 +14,10 @@ body {
     background-color: $first;
 }
 
+.text_primary {
+    color: $first;
+}
+
 .bg_secondary {
     background-color: $second;
 }
@@ -132,5 +136,10 @@ body {
         background-color: #55BA59;
         border-bottom: 2px solid grey;
     }
+}
+
+.infos {
+    background-color: #F6F6F6;
+    padding-bottom: 150px;
 }
 

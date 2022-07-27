@@ -13,7 +13,7 @@
             <img src="{{$comic['thumb']}}" alt="">
         </div>
         
-        <div class="pt-5">
+        <div class="py-5 ">
             <h6 class="text-end text-muted text-uppercase">advertisement</h6>
             <div class="row">
                 <div class="col-8">
@@ -45,6 +45,7 @@
                             </div>
                         </div>
                     </div>
+                    <p class="mt-2 text-secondary">{{$comic['description']}}</p>
                 </div>
                 <div class="col">
                     <div class="ps-4">
@@ -55,7 +56,75 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <div class="pt-4 border-top border-2 infos">
+        <div class="container comic">
+            <div class="row gap-3">
+                <div class="col">
+                    <h3 class="mb-3">Talent</h3>
+                    <div class="py-3 border-top">
+                        <div class="row">
+                            <div class="col-3 fw-bold">Art by:</div>
+                            <div class="col">
+                                @foreach ($comic['artists'] as $artist)
+                                    <span class="text_primary" style="font-size: 14.5px">{{$artist}}</span>
+                                    @if (!$loop->last)
+                                        <span>, </span>   
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-3 border-top border-bottom">
+                        <div class="row">
+                            <div class="col-3 fw-bold">Art by:</div>
+                            <div class="col">
+                                @foreach ($comic['writers'] as $writer)
+                                    <span class="text_primary" style="font-size: 14.5px">{{$writer}}, </span>
+                                    @if (!$loop->last)
+                                        <span>, </span>   
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <h3 class="mb-3">Specs</h3>
+                    <div class="py-3 border-top">
+                        <div class="row">
+                            <div class="col-3 fw-bold">Series:</div>
+                            <div class="col">
+                                <span class="text-uppercase text_primary">{{$comic['series']}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-3 border-top">
+                        <div class="row">
+                            <div class="col-3 fw-bold">U.S. Price:</div>
+                            <div class="col">
+                                <span>{{$comic['price']}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-3 border-top">
+                        <div class="row">
+                            <div class="col-3 fw-bold">On Sale Date:</div>
+                            <div class="col">
+                                <span>{{$comic['sale_date']}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     @include('partials.banner_blue')
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 @endsection
