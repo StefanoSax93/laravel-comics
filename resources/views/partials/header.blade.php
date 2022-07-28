@@ -55,7 +55,7 @@ $links = [
         <ul class="nav">
             @foreach($links as $link)
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase text-dark fw-bold" aria-current="page" href="{{$link['href']}}">{{$link['name']}}</a>
+                    <a class="nav-link text-uppercase fw-bold {{ Request::route()->getName() === $link["name"] ? 'active' : '' }}" aria-current="page" href="{{$link['href']}}">{{$link['name']}}</a>
                     <div class="hover-bar"></div>   
                 </li>
             @endforeach
