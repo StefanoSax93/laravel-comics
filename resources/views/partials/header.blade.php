@@ -51,7 +51,7 @@ $links = [
 </div>
 <div class="sticky-top bg-white">
     <div class="container d-flex justify-content-between align-items-center py-3">
-        <img src="{{asset('images/dc-logo.png')}}" alt="">
+        <a href="{{route('home')}}"><img src="{{asset('images/dc-logo.png')}}" alt=""></a>
         <ul class="nav">
             @foreach($links as $link)
                 <li class="nav-item">
